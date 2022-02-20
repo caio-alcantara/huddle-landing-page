@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+
+    a {
+        padding: 10px;
+        color: white;
+    }
+
+    a:hover {
+        color: $soft-magenta;
+        transition: .2s ease-in;
+    }
+}

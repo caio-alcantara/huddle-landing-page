@@ -1,0 +1,21 @@
+@media screen and (min-width: 750px) {
+    .container {
+        flex-direction: row;
+        height: 100%;
+        align-items: flex-start;
+
+        img {
+            width: 60%;
+            margin-right: 20px;
+        }
+
+        .text {
+            text-align: left;
+            padding-top: 90px;
+        }
+    }
+
+    footer {
+        justify-content: flex-end;
+    }
+}
