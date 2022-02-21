@@ -37,4 +37,4 @@ Users should be able to:
 ## Author
 
 - Website - https://github.com/caio-alcantara
-- Twitter - twitter.com/caiiuu3
+- Twitter - https://twitter.com/caiiuu3
