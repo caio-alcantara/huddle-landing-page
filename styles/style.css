@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #674baf;
+  max-height: 1000px;
 }
 
 header {
@@ -23,7 +24,7 @@ header img {
 }
 
 main {
-  padding: 40px;
+  padding: 40px 60px 40px 40px;
 }
 
 .container {
@@ -42,12 +43,14 @@ main {
 
 .container img {
   max-width: 100%;
+  max-height: 550px;
   padding-bottom: 60px;
   padding-top: 40px;
 }
 
 .container .text {
   min-width: 300px;
+  max-width: 450px;
   text-align: center;
 }
 
@@ -68,11 +71,12 @@ main {
 .container .text a {
   color: #674baf;
   background-color: white;
-  padding: 10px 65px 10px 65px;
-  margin-bottom: 40px;
+  padding: 15px 65px 15px 65px;
   border-radius: 50px;
   text-align: center;
   text-decoration: none;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
 }
 
 .container .text a:hover {
@@ -105,6 +109,9 @@ footer a:hover {
 }
 
 @media screen and (min-width: 750px) {
+  main {
+    padding: 40px 100px 40px 40px;
+  }
   .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -116,17 +123,66 @@ footer a:hover {
             align-items: flex-start;
   }
   .container img {
-    width: 60%;
-    margin-right: 20px;
+    max-width: 60%;
+    margin-right: 45px;
   }
   .container .text {
     text-align: left;
-    padding-top: 90px;
+    padding-top: 70px;
   }
   footer {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container .text h1 {
+    padding-bottom: 30px;
+  }
+  .container .text p {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container .text {
+    padding-top: 80px;
+  }
+  .container .text h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container .text {
+    padding-top: 90px;
+  }
+  .container .text p {
+    font-size: 0.99em;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  main {
+    padding: 40px 60px 40px 60px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  main {
+    padding: 10%;
+  }
+  .container .text h1 {
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+  }
+  .container .text p {
+    width: 80%;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
